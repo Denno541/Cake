@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Services — Sweet Burst</title>
+
+  <!-- Main stylesheet (your provided CSS) -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Optional: Google font already used site-wide -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Sweet Burst — Cakes, styling, full event planning, catering and bespoke packages." />
+</head>
+<body>
+
+  <!-- header (uses your site-header and container classes) -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Sweet <span>burst</span></a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="services.html" aria-current="page">Services</a>
+        <a href="cake-builder.html">Cake Builder</a>
+        <a href="cart.html" class="btn-outline">Cart</a>
+        <a href="Booking.html" class="btn-outline">Book</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO (reuses your .hero styles so it matches exactly) -->
+    <section class="hero">
+      <div class="container hero-grid" style="align-items:center;">
+        <div class="hero-left">
+          <h1>Professional Cakes & Event Services</h1>
+          <p class="lead">From bespoke cakes to full event coordination — we design beautiful moments and deliver without the stress.</p>
+          <div class="hero-cta">
+            <a class="btn-primary" href="booking.html">Book a Consultation</a>
+            <a class="btn-ghost" href="cakes.html">Browse Cakes</a>
+          </div>
+
+          <ul class="features-row" style="margin-top:18px;">
+            <li>Nationwide delivery</li>
+            <li>On-site setup</li>
+            <li>Tasting & consultations</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <picture>
+              <img src="redvelvet.jpg" alt="Beautiful tiered wedding cake">
+            </picture>
+            <div class="badge">Tailored packages • Kenya-wide</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES GRID - uses your existing cards-grid / card styles so visuals match -->
+    <section class="section container" aria-labelledby="servicesTitle">
+      <h2 id="servicesTitle" class="section-title">Our Services</h2>
+      <p class="section-sub">Curated packages for weddings, birthdays, corporate events and intimate celebrations.</p>
+
+      <div class="cards-grid" role="list">
+
+        <!-- Service 1 -->
+        <article class="card" role="listitem" aria-label="Custom Cakes">
+          <div class="product-card" style="flex-direction:column;align-items:stretch">
+            <div class="product-media" style="height:200px;">
+              <img src="custom.jpg" alt="Custom Cakes — Sweet Burst">
+            </div>
+
+            <div class="product-info" style="padding-top:14px">
+              <h3 style="margin:0 0 8px;color:var(--accent)">Custom Cakes</h3>
+              <p style="color:var(--muted);margin:0 0 12px">
+                Bespoke flavours, sculpted tiers and edible artistry — tailored for weddings, birthdays and special occasions.
+              </p>
+              <div style="display:flex;gap:10px;">
+                <a class="btn-primary" href="booking.html">Book Cake</a>
+                <a class="btn-ghost" href="cakes.html">View Gallery</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 2 -->
+        <article class="card" role="listitem" aria-label="Wedding Packages">
+          <div class="product-card" style="flex-direction:column;align-items:stretch">
+            <div class="product-media" style="height:200px;">
+              <img src="wedding.jpg" alt="Wedding Cakes">
+            </div>
+
+            <div class="product-info" style="padding-top:14px">
+              <h3 style="margin:0 0 8px;color:var(--accent)">Wedding Packages</h3>
+              <p style="color:var(--muted);margin:0 0 12px">
+                Multi-tiered wedding cakes, tastings, timeline coordination and delivery + setup on your special day.
+              </p>
+              <div style="display:flex;gap:10px;">
+                <a class="btn-primary" href="booking.html">Request Quote</a>
+                <a class="btn-ghost" href="contact.html">Consultation</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 3 -->
+        <article class="card" role="listitem" aria-label="Event Planning">
+          <div class="product-card" style="flex-direction:column;align-items:stretch">
+            <div class="product-media" style="height:200px;">
+              <img src="event.jpg" alt="Event Planning">
+            </div>
+
+            <div class="product-info" style="padding-top:14px">
+              <h3 style="margin:0 0 8px;color:var(--accent)">Full Event Planning</h3>
+              <p style="color:var(--muted);margin:0 0 12px">
+                End-to-end planning: concept, vendor coordination, schedule management and on-site event direction.
+              </p>
+              <div style="display:flex;gap:10px;">
+                <a class="btn-primary" href="booking.html">Start Planning</a>
+                <a class="btn-ghost" href="about.html">Meet the Team</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 4 -->
+        <article class="card" role="listitem" aria-label="Décor & Styling">
+          <div class="product-card" style="flex-direction:column;align-items:stretch">
+            <div class="product-media" style="height:200px;">
+              <img src="decor.jpg" alt="Decorations & Styling">
+            </div>
+
+            <div class="product-info" style="padding-top:14px">
+              <h3 style="margin:0 0 8px;color:var(--accent)">Decor & Styling</h3>
+              <p style="color:var(--muted);margin:0 0 12px">
+                Florals, backdrops, lighting, lounges and themed props — installed by our professional styling crew.
+              </p>
+              <div style="display:flex;gap:10px;">
+                <a class="btn-primary" href="booking.html">Enquire</a>
+                <a class="btn-ghost" href="gallery.html">View Work</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 5 -->
+        <article class="card" role="listitem" aria-label="Catering">
+          <div class="product-card" style="flex-direction:column;align-items:stretch">
+            <div class="product-media" style="height:200px;">
+              <img src="catering.jpg" alt="Catering Services">
+            </div>
+
+            <div class="product-info" style="padding-top:14px">
+              <h3 style="margin:0 0 8px;color:var(--accent)">Catering</h3>
+              <p style="color:var(--muted);margin:0 0 12px">
+                Delicious savory and sweet menus curated for your guest list — plated service or buffet options available.
+              </p>
+              <div style="display:flex;gap:10px;">
+                <a class="btn-primary" href="booking.html">Request Menu</a>
+                <a class="btn-ghost" href="contact.html">Contact Chef</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 6 -->
+        <article class="card" role="listitem" aria-label="Corporate Events">
+          <div class="product-card" style="flex-direction:column;align-items:stretch">
+            <div class="product-media" style="height:200px;">
+              <img src="corporate.jpg" alt="Corporate Events">
+            </div>
+
+            <div class="product-info" style="padding-top:14px">
+              <h3 style="margin:0 0 8px;color:var(--accent)">Corporate & Brand Events</h3>
+              <p style="color:var(--muted);margin:0 0 12px">
+                Branded desserts, catering, staffed beverage stations and event coordination for product launches and company events.
+              </p>
+              <div style="display:flex;gap:10px;">
+                <a class="btn-primary" href="booking.html">Corporate Enquiry</a>
+                <a class="btn-ghost" href="contact.html">Request Brochure</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 7 -->
+        <article class="card" role="listitem" aria-label="Kids & Parties">
+          <div class="product-card" style="flex-direction:column;align-items:stretch">
+            <div class="product-media" style="height:200px;">
+              <img src="kids.jpg" alt="Kids Parties">
+            </div>
+
+            <div class="product-info" style="padding-top:14px">
+              <h3 style="margin:0 0 8px;color:var(--accent)">Kids & Celebration Packages</h3>
+              <p style="color:var(--muted);margin:0 0 12px">
+                Themed cakes, balloon installs, kid-friendly menus and fun props — perfect for birthday parties and family events.
+              </p>
+              <div style="display:flex;gap:10px;">
+                <a class="btn-primary" href="booking.html">Book Party</a>
+                <a class="btn-ghost" href="gallery.html">Inspiration</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 8 -->
+        <article class="card" role="listitem" aria-label="Kids & Parties">
+          <div class="product-card" style="flex-direction:column;align-items:stretch">
+            <div class="product-media" style="height:200px;">
+              <img src="bridal.jpg" alt="Kids Parties">
+            </div>
+
+            <div class="product-info" style="padding-top:14px">
+              <h3 style="margin:0 0 8px;color:var(--accent)">Engagement & Bridal Shower Packages</h3>
+              <p style="color:var(--muted);margin:0 0 12px">
+             Sweet Burst cakes and elegant décor tailored to your theme, creating intimate and memorable celebrations that reflect your unique love story.              </p>
+              <div style="display:flex;gap:10px;">
+                <a class="btn-primary" href="booking.html">Book Party</a>
+                <a class="btn-ghost" href="gallery.html">Inspiration</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Service 9 -->
+        <article class="card" role="listitem" aria-label="Custom Packages">
+          <div class="product-card" style="flex-direction:column;align-items:stretch">
+            <div class="product-media" style="height:200px;">
+              <img src="packaging.jpg" alt="Custom Packages">
+            </div>
+
+            <div class="product-info" style="padding-top:14px">
+              <h3 style="margin:0 0 8px;color:var(--accent)">Custom Packages</h3>
+              <p style="color:var(--muted);margin:0 0 12px">
+                Mix & match cakes, décor, entertainment and catering to create a bespoke package that suits your style and budget.
+              </p>
+              <div style="display:flex;gap:10px;">
+                <a class="btn-primary" href="booking.html">Create Package</a>
+                <a class="btn-ghost" href="contact.html">Talk to Us</a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Optional CTA strip that matches hero look -->
+    <section class="section" aria-hidden="false" style="padding:28px 0 48px;background:linear-gradient(180deg, rgba(255,111,166,0.03), transparent);">
+      <div class="container" style="display:flex;align-items:center;gap:18px;flex-wrap:wrap;justify-content:space-between">
+        <div>
+          <h3 style="margin:0;color:#fff">Ready to plan something beautiful?</h3>
+          <p style="margin:6px 0 0;color:var(--muted)">Book a consultation and we'll walk you through every step — free tasting included for wedding packages.</p>
+        </div>
+        <div>
+          <a class="btn-primary" href="booking.html" style="padding:12px 20px">Book a Free Consult</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-inner" style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+        <div>© 2025 Sweet Burst</div>
+        <div style="color:var(--muted)">IG • WhatsApp • Email</div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- small script to enable mobile menu toggle (keeps behaviour consistent with index) -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const nav = document.querySelector('.nav');
+    menuBtn?.addEventListener('click', ()=> {
+      if(!nav) return;
+      nav.style.display = nav.style.display === 'flex' ? 'none' : 'flex';
+    });
+  </script>
+</body>
+</html>

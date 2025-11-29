@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cake Builder – Sweet Burst</title>
+  <link rel="stylesheet" href="cakebuilder.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Sweet <span>burst</span></a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="btn-outline">Home</a>
+      <a href="services.html">Services</a>
+      <a href="cakes.html">Cakes</a>
+      <a href="cake-builder.html" class="active">Cake Builder</a>
+      <a href="Booking.html" class="btn-outline">Book</a>
+      <a href="cart.html" class="btn-outline">Cart</a>
+    </nav>
+  </div>
+</header>
+
+<section class="builder" id="builder">
+  <div class="container builder-grid">
+
+    <!-- LEFT: Options -->
+    <div class="builder-options glassmorphism">
+      <h2>🎂 Build Your Custom Cake</h2>
+
+      <!-- Shape -->
+      <label for="shape">Shape</label>
+      <select id="shape" name="shape">
+        <option value="round" data-price="0">Round (default)</option>
+        <option value="square" data-price="300">Square (+ Ksh 300)</option>
+        <option value="heart" data-price="500">Heart (+ Ksh 500)</option>
+      </select>
+
+      <!-- Size -->
+      <label for="size">Size</label>
+      <select id="size" name="size">
+        <option value="1kg" data-price="1200">1 Kg – Ksh 1200</option>
+        <option value="2kg" data-price="2200">2 Kg – Ksh 2200</option>
+        <option value="3kg" data-price="3200">3 Kg – Ksh 3200</option>
+      </select>
+
+      <!-- Flavor -->
+      <label for="flavor">Flavor</label>
+      <select id="flavor" name="flavor">
+        <option value="vanilla" data-price="0">Vanilla</option>
+        <option value="chocolate" data-price="200">Chocolate (+ Ksh 200)</option>
+        <option value="redvelvet" data-price="350">Red Velvet (+ Ksh 350)</option>
+        <option value="strawberry" data-price="250">Strawberry (+ Ksh 250)</option>
+      </select>
+
+      <!-- Decorations -->
+      <label>Decorations</label>
+      <div class="decorations">
+        <label><input type="checkbox" class="decor-item" data-price="150" /> Sprinkles (+150)</label>
+        <label><input type="checkbox" class="decor-item" data-price="200" /> Fruit Topping (+200)</label>
+        <label><input type="checkbox" class="decor-item" data-price="300" /> Fondant Flowers (+300)</label>
+        <label><input type="checkbox" class="decor-item" data-price="400" /> Name Writing (+400)</label>
+      </div>
+
+      <!-- Quantity -->
+      <label>Quantity</label>
+      <div class="qty-control">
+        <button id="minus" aria-label="Decrease quantity">-</button>
+        <span id="qty" aria-live="polite">1</span>
+        <button id="plus" aria-label="Increase quantity">+</button>
+      </div>
+
+      <!-- Total Price -->
+      <h3>Total: <span id="total">Ksh 1200</span></h3>
+
+      <button id="addToCart" class="btn add-cart">Add to Cart</button>
+      <button id="saveCake" class="btn save-cake">Save Cake</button>
+    </div>
+
+    <!-- RIGHT: Live Preview -->
+    <div class="builder-preview glassmorphism" aria-live="polite" aria-atomic="true">
+      <h2>Preview</h2>
+      <img
+        id="cakeImage"
+        src="birthday.jpg, wedding.jpg, cupcakes.jpg, Baby shower.jpg vannila.jpg, chocolate.jpg, redvelvet.jpg, lemon.jpg"
+        alt="Cake Preview"
+        role="img"
+      />
+    </div>
+
+  </div>
+
+  <!-- Sidebar recommended cakes -->
+  <div class="recommended glassmorphism" aria-label="Recommended cakes">
+    <h3>Recommended for You</h3>
+    <div class="rec-list">
+      <div class="rec-item" tabindex="0">
+        <img src="redvelvet.jpg" alt="Red Velvet Cake" />
+        <p>Red Velvet – Ksh 1800</p>
+      </div>
+      <div class="rec-item" tabindex="0">
+        <img src="chocolate.jpg" alt="Chocolate Deluxe Cake" />
+        <p>Chocolate Deluxe – Ksh 2200</p>
+      </div>
+      <div class="rec-item" tabindex="0">
+        <img src="lemon.jpg" alt="Fruit Cake" />
+        <p>Lemon Delight Cake – Ksh 2500</p>
+      </div>
+      <div class="rec-item" tabindex="0">
+        <img src="birthday.jpg" alt="Fruit Cake" />
+        <p>Birthday Cake – Ksh 2500</p>
+      </div>
+      <div class="rec-item" tabindex="0">
+        <img src="cupcakes.jpg" alt="Fruit Cake" />
+        <p>Cupcake Cake – Ksh 2500</p>
+      </div>
+      <div class="rec-item" tabindex="0">
+        <img src="Baby shower.jpg" alt="Fruit Cake" />
+        <p>Baby Shower Cake – Ksh 2500</p>
+      </div>
+      <div class="rec-item" tabindex="0">
+        <img src="wedding.jpg" alt="Fruit Cake" />
+        <p>Wedding Cake – Ksh 2500</p>
+      </div>
+      <div class="rec-item" tabindex="0">
+        <img src="fruit.jpg" alt="Fruit Cake" />
+        <p>Fruit Cake – Ksh 2500</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="cakebuilder.js"></script>
+
+</body>
+</html>

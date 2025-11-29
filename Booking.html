@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Service | SweetBurst Cakes & Events</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="booking.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">Sweet <span>burst</span></a>
+
+    <nav class="nav" aria-label="Main navigation">
+      <a href="index.html" class="btn-outline">Home</a>
+      <a href="services.html">Services</a>
+      <a href="cakes.html">Cakes</a>
+      <a href="cake-builder.html" class="active">Cake Builder</a>
+      <a href="Booking.html" class="btn-outline">Book</a>
+      <a href="cart.html" class="btn-outline">Cart</a>
+    </nav>
+  </div>
+</header>
+
+  <section class="hero">
+    <h1>Book Your Cake or Event Service</h1>
+  </section>
+
+  <section class="booking-section">
+    <h2>Make a Booking</h2>
+    <p>Fill in the form below and we'll get back to you with confirmation.</p>
+
+    <form action="submit_booking.php" method="POST">
+
+      <div>
+        <label>Your Full Name</label>
+        <input type="text" name="fullname" placeholder="John Doe" required>
+      </div>
+
+      <div>
+        <label>Your Email</label>
+        <input type="email" name="email" placeholder="johndoe@gmail.com" required>
+      </div>
+
+      <div>
+        <label>Your Phone Number</label>
+        <input type="tel" name="phone" placeholder="+254 712 345 678" required>
+      </div>
+
+      <div>
+        <label>Select Service</label>
+        <select name="service" required>
+          <option value="">Select service</option>
+          <option>Cake Order</option>
+          <option>Wedding Cake</option>
+          <option>Birthday Package</option>
+          <option>Event Planning</option>
+          <option>Baby Shower Decoration</option>
+          <option>Corporate Event</option>
+          <option>Graduation Party</option>
+          <option>Custom Decoration Setup</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Date Needed</label>
+        <input type="date" name="date" required>
+      </div>
+
+      <div>
+        <label>Time (Optional)</label>
+        <input type="time" name="time">
+      </div>
+
+      <div>
+        <label>Additional Details</label>
+        <textarea name="message" placeholder="Describe cake design, theme, number of guests, color preferences..."></textarea>
+      </div>
+
+      <button type="submit">Submit Booking Request</button>
+
+    </form>
+  </section>
+
+  <footer>
+    © 2025 SweetBurst Cakes & Events — All Rights Reserved.
+  </footer>
+
+</body>
+</html>

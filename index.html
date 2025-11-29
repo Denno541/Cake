@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sweet Moments — Premium Cakes & Events</title>
+
+  <!-- Swiper (slider) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Preconnect for fonts (optional) -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Premium event planning, décor and bespoke cakes — Sweet Moments. Book consultations, browse cakes and build your custom cake." />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">Sweet <span>burst</span></a>
+
+      <nav class="nav" aria-label="Main">
+        <a href="services.html">Services</a>
+        <a href="cakes.html">Cakes</a>
+        <a href="cake-builder.html" class="active">Cake Builder</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="Booking.html" class="btn-outline">Book</a>
+        <a href="cart.html" class="btn-outline">Cart</a>
+      </nav>
+
+      <button id="menuBtn" class="menu-btn" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1 class="anim">Luxury Cakes & Event Styling that Tells Your Story</h1>
+          <p class="lead anim-delay">From intimate gatherings to grand weddings premium styling, bespoke cakes, and full coordination.</p>
+          <div class="hero-cta anim-delay-2">
+            <a class="btn-primary" href="cakes.html">Start Planning</a>
+          </div>
+
+          <ul class="features-row anim-delay-3">
+            <li>Custom flavours</li>
+            <li>Venue styling</li>
+            <li>Delivery & setup</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <picture>
+              
+              <img src="redvelvet.jpg" alt="Elegant tiered cake on a pedestal" />
+            </picture>
+            <div class="badge">Free consultation • Kenya-wide</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section container">
+      <h2 class="section-title">Our Services</h2>
+      <p class="section-sub">Packages crafted for memorable experiences</p>
+
+      <div class="cards-grid">
+        <article class="card">
+          <h3>Full Wedding Planning</h3>
+          <p>Coordination, vendor management, design, timelines and day-of support.</p>
+        </article>
+
+        <article class="card">
+          <h3>Cake Studio</h3>
+          <p>Bespoke flavours, sculpted tiers, and edible artistry for every theme.</p>
+        </article>
+
+        <article class="card">
+          <h3>Décor & Styling</h3>
+          <p>Concept to install: florals, lighting, lounge furniture and signage.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- CAKES / PRODUCT SLIDER -->
+    <section id="cakes" class="section container">
+      <div class="section-head">
+        <h2 class="section-title">Popular Cakes</h2>
+        <p class="section-sub">Handcrafted — pick, customise, or book a bespoke consult</p>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper" id="productSlides">
+          <!-- Slides inserted by JS (accessible & semantic inside) -->
+        </div>
+        <!-- Navigation -->
+        <div class="swiper-nav">
+          <div class="swiper-button-prev" aria-label="Previous cake"></div>
+          <div class="swiper-button-next" aria-label="Next cake"></div>
+        </div>
+        <div class="swiper-pagination" aria-hidden="false"></div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section container">
+      <h2 class="section-title">Pricing (Starting)</h2>
+      <div class="pricing-grid">
+        <div class="pricing-card">
+          <h3>Sweet Starter</h3>
+          <div class="price">Ksh 3,500</div>
+          <p>6" celebration cake — simple finish</p>
+          <button class="btn-primary small">Order</button>
+        </div>
+        <div class="pricing-card highlight">
+          <h3>Signature</h3>
+          <div class="price">Ksh 8,500</div>
+          <p>Custom design with fresh flowers</p>
+          <button class="btn-primary small">Order</button>
+        </div>
+        <div class="pricing-card">
+          <h3>Wedding</h3>
+          <div class="price">From Ksh 25,000</div>
+          <p>Tiered cakes & tasting session</p>
+          <button class="btn-primary small">Enquire</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section container">
+      <h2 class="section-title">What clients say</h2>
+
+      <div class="swiper testimonySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimony">
+            <blockquote>“The cake stole the show stunning taste and packaging.”</blockquote>
+            <cite>— Lucy N., Kiambu</cite>
+          </div>
+          <div class="swiper-slide testimony">
+            <blockquote>“Flawless setup and the decor team were on time. Highly recommend.”</blockquote>
+            <cite>— Dennis G., Nakuru</cite>
+          </div>
+          <div class="swiper-slide testimony">
+            <blockquote>“I loved the work done by your catering team. Highly recommend.”</blockquote>
+            <cite>— Mercy W., Nakuru</cite>
+          </div>
+          <div class="swiper-slide testimony">
+            <blockquote>“Professional planning they handled everything.”</blockquote>
+            <cite>— Eddie Y., Nairobi</cite>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <!-- BOOKING -->
+    <section id="booking" class="section container">
+      <h2 class="section-title">Book a Consultation</h2>
+      <form id="bookingForm" class="booking-form" aria-label="Booking form">
+        <div class="form-row">
+          <label>Full name <input name="name" required /></label>
+          <label>Email <input name="email" type="email" required /></label>
+        </div>
+        <div class="form-row">
+          <label>Phone <input name="phone" required /></label>
+          <label>Event date <input name="date" type="date" required /></label>
+        </div>
+        <label>Event type
+          <select name="type">
+            <option>Wedding</option><option>Birthday</option><option>Corporate</option><option>Other</option>
+          </select>
+        </label>
+
+        <label>Message <textarea name="message" rows="4" placeholder="Tell us about your vision"></textarea></label>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary">Send Request</button>
+          <button type="button" id="phoneCall" class="btn-ghost">Call Us</button>
+        </div>
+
+        <div id="bookingMsg" class="notice" hidden role="status" aria-live="polite"></div>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© 2025 Sweet Burst</div>
+        <div class="socials">IG • WhatsApp • Email</div>
+      </div>
+    </footer>
+  </main>
+
+  <!-- CAKE BUILDER MODAL (demo) -->
+  <div id="builderModal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="builderTitle">
+    <div class="modal-panel" role="document">
+      <button class="modal-close" id="closeBuilder" aria-label="Close builder">✕</button>
+      <h3 id="builderTitle">Cake Builder (Demo)</h3>
+
+      <div class="builder-grid">
+        <label>Size
+          <select id="bSize">
+            <option value="6">6" (serves 6) — +Ksh 0</option>
+            <option value="8">8" (serves 10) — +Ksh 800</option>
+            <option value="10">10" (serves 18) — +Ksh 2200</option>
+          </select>
+        </label>
+
+        <label>Flavor
+          <select id="bFlavor">
+            <option>Vanilla</option>
+            <option>Chocolate</option>
+            <option>Red Velvet</option>
+            <option>Lemon</option>
+          </select>
+        </label>
+
+        <label>Extras
+          <div class="extras">
+            <label><input type="checkbox" value="500" class="extraItem" /> Fresh flowers (+Ksh 500)</label>
+            <label><input type="checkbox" value="400" class="extraItem" /> Gold leaf (+Ksh 400)</label>
+            <label><input type="checkbox" value="700" class="extraItem" /> Sugar topper (+Ksh 700)</label>
+          </div>
+        </label>
+
+        <label>Quantity
+          <input id="bQty" type="number" value="1" min="1" />
+        </label>
+
+        <div class="builder-preview">
+          <div>Estimated price</div>
+          <div id="bPrice" class="big-price">Ksh 3,500</div>
+          <button id="addToCart" class="btn-primary">Add to Cart (demo)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts: Swiper + GSAP + main -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="Main.js"></script>
+</body>
+</html>
