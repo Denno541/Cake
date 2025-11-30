@@ -103,7 +103,45 @@
       font-size: 14px;
     }
 
-    @media(max-width: 768px) {
-      .hero h1 { font-size: 32px; }
-      .booking-section { margin: 20px; padding: 20px; }
-    }
+    /* Hide nav on mobile */
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    top: 70px;
+    right: -100%;
+    background: #0f1724;
+    width: 200px;
+    padding: 20px;
+    flex-direction: column;
+    gap: 15px;
+    transition: 0.4s ease;
+  }
+
+  /* When open */
+  .nav.open {
+    right: 0;
+  }
+
+  .menu-btn {
+    display: block;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+/* Desktop */
+@media (min-width: 769px) {
+  .menu-btn {
+    display: none;
+  }
+
+  .nav {
+    display: flex;
+    position: static;
+  }
+}
+
+    
