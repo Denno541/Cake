@@ -6,6 +6,7 @@ const PRODUCTS = [
   {id:2, title:'Choco Fudge (8")', price:4200, img:'chocolate.jpg', desc:'Dark chocolate layers with ganache'},
   {id:3, title:'Red Velvet (6")', price:3800, img:'redvelvet.jpg', desc:'Velvety red sponge with cream cheese'},
   {id:4, title:'Lemon Delight (8")', price:3400, img:'lemon.jpg', desc:'Zesty lemon curd and vanilla sponge'}
+  {id:5, title:'Chocolate Cupcake (4")', price:3500, img:'cupcakes.jpg', desc:'Zesty lemon curd and vanilla sponge cupcakes'}
 ];
 
 // ---- Populate product slides for Swiper ----
